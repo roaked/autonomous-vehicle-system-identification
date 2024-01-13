@@ -1,12 +1,10 @@
 function reference = reference_builder
 
 disp('This function builds a reference for the forward movement of the Rasteirinho.')
-disp('Each group will have to follow a different reference.')
-disp('If the group has less than three members, input 0 as the number of the non-existing members.')
 
-number1 = input('Input the student number of the first member of the group: ');
-number2 = input('Input the student number of the second member of the group: ');
-number3 = input('Input the student number of the third member of the group: ');
+number1 = input('First digit ');
+number2 = input('Second digit ');
+number3 = input('Third digit ');
 rng(number1 + number2 + number3); % this sets a seed for the generation of random numbers
 delta_t1 = randi(4) + 1; % 2, 3, 4 or 5
 delta_t2 = randi(4) + 3; % 4, 5, 6 or 7
